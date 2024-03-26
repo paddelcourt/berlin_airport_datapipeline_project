@@ -87,7 +87,7 @@ The pipelines should all be connected and setup, you will see three pipelines
 
 ### Deplyoing to Google Cloud
 
-To run Mage on Google Cloud so it can run autonomously without needing a local machine, you will need to follow the set up by Matt Palmer here:
+To run Mage on Google Cloud so it can run autonomously without needing a local machine, you will need to follow the set up by Mage (Matt Palmer) here:
 
 1. [Google Cloud Permissions](https://www.youtube.com/watch?v=O_H7DCmq2rA&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=14&ab_channel=Mage)
 2. [Google Cloud Pre-Requisites](https://www.youtube.com/watch?v=zAwAX5sxqsg&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=13&ab_channel=Mage)
