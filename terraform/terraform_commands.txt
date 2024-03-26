@@ -1,0 +1,3 @@
+1. To begin: terraform init
+2. Apply files to get bucket and dataset: terraform Apply
+3. Destroy bucket and dataset: terraform destroy 
