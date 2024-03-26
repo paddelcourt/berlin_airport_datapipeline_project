@@ -10,6 +10,7 @@ and day to day operations. As a result, I decided to create a project that would
 
 
 # Dashboard
+![Dashboard](https://github.com/paddelcourt/berlin_airport_datapipeline_project/blob/main/looker_image_example.jpg)
 
 [Link](https://lookerstudio.google.com/reporting/d7836225-a780-4303-91ee-855ddbca4f5a)
 
