@@ -44,7 +44,7 @@ Additionally, for Mage Orchestration, you will need to install the python packag
 
 # Setup
 
-### Terraform
+## Terraform
 
 Terraform will be used to setup the GCS bucket. To do so, follow these steps:
 1. CD into the terraform directory.
@@ -53,11 +53,29 @@ Terraform will be used to setup the GCS bucket. To do so, follow these steps:
 4. To apply the `main.tf` file, enter `terraform apply`.
 5. To destroy the setup, enter `terraform destroy` into the terminal. 
 
-### Mage
+## Mage
 
+### Mage Local Setup
 
+To begin mage, please cd into the `mage-zoomcamp` directory and then do the following:
+1. `docker compose build`
+2. `docker pull mageai/mageai:latest` (To update to latest mage image)
+3. `docker compose up`
 
+Please make sure to have Docker and the container mage-zoom running. Then you can type in your browswer `http://localhost:6789/` to run Mage locally
 
+Tutorial on Local Mage setup can be found [here](https://www.youtube.com/watch?v=tNiV7Wp08XE&ab_channel=Mage)
+
+### Deplyoing to Google Cloud
+
+To run Mage on Google Cloud so it can run autonomously without needing a local machine, you will need to follow the set up by Matt Palmer here:
+
+1. [Google Cloud Permissions](https://www.youtube.com/watch?v=O_H7DCmq2rA&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=14&ab_channel=Mage)
+2. [Google Cloud Pre-Requisites](https://www.youtube.com/watch?v=zAwAX5sxqsg&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=13&ab_channel=Mage)
+3. [Deployment Part 1](https://www.youtube.com/watch?v=9A872B5hb_0&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=15&ab_channel=Mage)
+4. [Deployment Part 2](https://www.youtube.com/watch?v=0YExsb2HgLI&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=16&ab_channel=Mage)
+
+Note: You will need to recreate the pipeplines on the cloud. 
 
 
 # Contributions and Gratitude 
