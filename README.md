@@ -62,9 +62,27 @@ To begin mage, please cd into the `mage-zoomcamp` directory and then do the foll
 2. `docker pull mageai/mageai:latest` (To update to latest mage image)
 3. `docker compose up`
 
-Please make sure to have Docker and the container mage-zoom running. Then you can type in your browswer `http://localhost:6789/` to run Mage locally
+Please make sure to have Docker and the container mage-zoom running. Then you can type in your browswer `http://localhost:6789/` to run Mage locally.
 
 Tutorial on Local Mage setup can be found [here](https://www.youtube.com/watch?v=tNiV7Wp08XE&ab_channel=Mage)
+
+### GCP Setup
+
+To connect Mage with GCS, you will need to set up a service account with proper access, and also have GCS credentials prepared for Mage to use. 
+Please refer to this [tutorial](https://www.youtube.com/watch?v=00LP360iYvE&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=8&ab_channel=Mage) by Mage for the GCS setup. 
+Additionally, it may be helpful to view the `ETL: API to GCS` and `ETL: API to Bigquery` for full explanation. 
+
+
+### Mage Pipeline Setup
+
+The pipelines should all be connected and setup, you will see three pipelines
+
+1. berlin_arrivals_etl_to_gcs_bq: This pipeline pulls the arrivals data from the API and uploads the data as a CSV onto a GCS Bucket and Corresponding BigQuery table.
+2. berlin_departures_etl_to_gcs_bq: This pipeline pulls the departures data from the API and uploads the data as a CSV onto a GCS Bucket and Corresponding BigQuery table.
+3. berlin_union_departures_arrivals: This pipeline pulls the
+
+   
+
 
 ### Deplyoing to Google Cloud
 
@@ -75,7 +93,7 @@ To run Mage on Google Cloud so it can run autonomously without needing a local m
 3. [Deployment Part 1](https://www.youtube.com/watch?v=9A872B5hb_0&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=15&ab_channel=Mage)
 4. [Deployment Part 2](https://www.youtube.com/watch?v=0YExsb2HgLI&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=16&ab_channel=Mage)
 
-Note: You will need to recreate the pipeplines on the cloud. 
+Note: You will need to recreate the pipeplines and schedules on the cloud. 
 
 
 # Contributions and Gratitude 
