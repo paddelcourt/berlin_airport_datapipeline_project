@@ -11,7 +11,7 @@ and day to day operations. As a result, I decided to create a project that would
 
 # Dashboard
 
-[Link](https://lookerstudio.google.com/u/0/reporting/d7836225-a780-4303-91ee-855ddbca4f5a/page/4SRrD/edit)
+[Link]([https://lookerstudio.google.com/u/0/reporting/d7836225-a780-4303-91ee-855ddbca4f5a/page/4SRrD/edit](https://lookerstudio.google.com/reporting/d7836225-a780-4303-91ee-855ddbca4f5a))
 
 Note: Due to budgetary and time constraints, the dashboard will only contain data for 2024-02-28 for demoing purposes. Due to the rate limiter of the API, the DAG was designed to collect data only one day, and with cloud costs running high,
 it was decided that only one day of data will be shown for demosntration purposes. 
