@@ -8,6 +8,14 @@ This is a project that is part of the data engineering 2024 Zoomcamp Project
 As someone who is dependent on the Berlin Airport and has flown a decent number of times over the last 2 years, I've witnessed how chaotic flying in Europe can be, and especially at this airport. This airport has been known for multiple delays and issues in both its development
 and day to day operations. As a result, I decided to create a project that would 
 
+
+# Dashboard
+
+[Link](https://lookerstudio.google.com/u/0/reporting/d7836225-a780-4303-91ee-855ddbca4f5a/page/4SRrD/edit)
+
+Note: Due to budgetary and time constraints, the dashboard will only contain data for 2024-02-28 for demoing purposes. Due to the rate limiter of the API, the DAG was designed to collect data only one day, and with cloud costs running high,
+it was decided that only one day of data will be shown for demosntration purposes. 
+
 # Design
 ![Data pipeline design](https://github.com/paddelcourt/berlin_airport_datapipeline_project/blob/main/data_architecture.jpeg)
 
