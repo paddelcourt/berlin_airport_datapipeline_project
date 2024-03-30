@@ -36,7 +36,7 @@ output = args.output
 
 spark = SparkSession.builder     .appName('test')     .getOrCreate()
 
-spark.conf.set('temporaryGcsBucket', 'dataproc-temp-europe-west1-316096684090-ncqolfhp')
+spark.conf.set('temporaryGcsBucket', 'dataproc_bucket_name')
 
 
 # In[ ]:
