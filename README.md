@@ -6,7 +6,7 @@ This is a project that is part of the data engineering 2024 Zoomcamp Project
 # Problem Statement
 
 As someone who is dependent on the Berlin Airport and has flown a decent number of times over the last 2 years, I've witnessed how chaotic flying in Europe can be, and especially at this airport. This airport has been known for multiple delays and issues in both its development
-and day to day operations. As a result, I decided to create a project that would be able to help me visualize the Airport's arrivals and departures, and track delays based on average delays, delays by airlines, and other interesting statistic such as arrival and departure destinations. By using this ELT orchestration project, and left to run long enough, one could collect enough data to visualize over the long run the performance of the airport and identify specific patterns that drives the timeliness of the airport. 
+and day to day operations. As a result, I decided to create a project that would be able to help me visualize the Airport's arrivals and departures, and track delays based on average delays, delays by airlines, and other interesting statistic such as arrival and departure destinations. By using this ELT orchestration project, and left to run long enough, one could collect enough data to visualize over the long run the performance of the airport and identify specific patterns that drives the timeliness of the airport. For this project, given the budgetary, available data and time constraints, I've decided to only do one day to showcase how the final output would look like. 
 
 
 # Dashboard
