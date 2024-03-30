@@ -35,8 +35,8 @@ For this project, the requirements will be needed as follows
 2. GCS Buckets (GCP)
 3. Bigquery (GCP)
 4. Mage 
-5. Java (Optional for Option B)
-6. Apache Spark (Optional for Option B)
+5. Java (Optional for Option A)
+6. Apache Spark (Optional for Option A)
 
 Please follow the [tutorials](https://github.com/DataTalksClub/data-engineering-zoomcamp) on weeks 1 (Docker), 2 (Mage) and 5 (Spark) for proper installation and setup as these are quite extensive if the pre-requisite installations have not already been done. Notably for this project, Mage and Pyspark will be used as the primary tools. You can also use the notes made by the students who cover extensively the setup process if text is the preferred form of instruction. 
 
@@ -97,12 +97,12 @@ To run Mage on Google Cloud so it can run autonomously without needing a local m
 
 Note: You will need to recreate the pipeplines and schedules on the cloud. 
 
-### Pyspark
+### Spark
 
-Alternatively, as shown in Option B, included in the repo is also the file   `berlin_airport_pyspark_dataproc.py` which is the Pyspark file used to transform and combine the two datasets. The correct GCS bucket name of the data and the Python file will need to be filled in `spark.conf.set('temporaryGcsBucket', "dataproc bucket")`. 
+Alternatively, as shown in Option A, included in the repo is also the file   `berlin_airport_pyspark_dataproc.py` which is the Pyspark file used to transform and combine the two datasets. The correct GCS bucket name of the data and the Python file will need to be filled in `spark.conf.set('temporaryGcsBucket', "dataproc bucket")`. Both Mage and Spark here aim to achieve the same task which is to transform the arrivals and departures data and then union them together into a combined table. 
 
 
-Please follow this video tutorial to understand how to set up a Dataproc Cluster and how to run the file. Note that running a cluster can be prohibitevly expensive and doesn't make too much sense for a small scale project like this, but for educational purposes this could be useful to learn. 
+Please follow [this video tutorial](https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=66&ab_channel=DataTalksClub%E2%AC%9B) to understand how to set up a Dataproc Cluster and how to run the file. You can use the python file in the repository as opposed to the one in the tutorial for the project. Note that running a cluster can be prohibitevly expensive and doesn't make too much sense for a small scale project like this, but for educational purposes this could be useful to learn. 
 
 
 # Contributions and Gratitude 
