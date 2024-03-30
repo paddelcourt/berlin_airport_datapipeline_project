@@ -82,10 +82,11 @@ The pipelines should all be connected and setup, you will see three pipelines
 2. berlin_departures_etl_to_gcs_bq: This pipeline pulls the departures data from the API and uploads the data as a CSV onto a GCS Bucket and Corresponding BigQuery table.
 3. berlin_union_departures_arrivals: This pipeline pulls the
 
-   
+
+You can create with Mage the triggers to run the pipelines daily, and should run them in the order listed above with the union being last to combine the data. Make sure to have enough time for the first two pipelines to finish running before combining the two tables on BigQuery. 
 
 
-### Deplyoing to Google Cloud
+### Deplyoing Mage Orchestation to Google Cloud
 
 To run Mage on Google Cloud so it can run autonomously without needing a local machine, you will need to follow the set up by Mage (Matt Palmer) here:
 
@@ -95,6 +96,13 @@ To run Mage on Google Cloud so it can run autonomously without needing a local m
 4. [Deployment Part 2](https://www.youtube.com/watch?v=0YExsb2HgLI&list=PL_ItKjYd0DsggZs-aPVsZMkJOOGeHaXge&index=16&ab_channel=Mage)
 
 Note: You will need to recreate the pipeplines and schedules on the cloud. 
+
+### Pyspark
+
+Alternatively, as shown in Option B, included in the repo is also the file   `berlin_airport_pyspark_dataproc.py` which is the Pyspark file used to transform and combine the two datasets. The correct GCS bucket name of the data and the Python file will need to be filled in `spark.conf.set('temporaryGcsBucket', "dataproc bucket")`. 
+
+
+Please follow this video tutorial to understand how to set up a Dataproc Cluster and how to run the file. Note that running a cluster can be prohibitevly expensive and doesn't make too much sense for a small scale project like this, but for educational purposes this could be useful to learn. 
 
 
 # Contributions and Gratitude 
