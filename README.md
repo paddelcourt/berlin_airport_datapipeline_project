@@ -16,8 +16,8 @@ By using this ELT orchestration project, and left to run long enough, one could 
 
 [Link](https://lookerstudio.google.com/reporting/d7836225-a780-4303-91ee-855ddbca4f5a)
 
-Note: Due to budgetary and time constraints, the dashboard will only contain data for 2024-02-28 for demoing purposes. Due to the rate limiter of the API, the DAG was designed to collect data only one day, and with cloud costs running high,
-it was decided that only one day of data will be shown for demosntration purposes. 
+Note: Due to the rate limiter of the API, the DAG was designed to collect data only one day (yesterday) per run, and with cloud costs running high and limited time,
+it was decided that only one day of data will be shown for demonstration purposes. The dashboard will only contain data for 2024-02-28 for demoing purposes
 
 # Design
 ![Data pipeline design](https://github.com/paddelcourt/berlin_airport_datapipeline_project/blob/main/data_architecture.jpeg)
