@@ -17,7 +17,8 @@ By using this ELT orchestration project, and left to run long enough, one could 
 [Link](https://lookerstudio.google.com/reporting/d7836225-a780-4303-91ee-855ddbca4f5a)
 
 Note: Due to the rate limiter of the API, the DAG was designed to collect data only one day (yesterday) per run, and with cloud costs running high and limited time,
-it was decided that only one day of data will be shown for demonstration purposes. The dashboard will only contain data for 2024-02-28 for demoing purposes
+it was decided that only one day of data will be shown for demonstration purposes. The dashboard will only contain data for 2024-02-28 for demoing purposes. Also the screenshot image is displaying sum and not average values of average delay in the single numbers on the right, 
+this has been fixed 
 
 # Design
 ![Data pipeline design](https://github.com/paddelcourt/berlin_airport_datapipeline_project/blob/main/data_architecture.jpeg)
@@ -82,7 +83,7 @@ The pipelines should all be connected and setup, you will see three pipelines
 
 1. berlin_arrivals_etl_to_gcs_bq: This pipeline pulls the arrivals data from the API and uploads the data as a CSV onto a GCS Bucket and Corresponding BigQuery table.
 2. berlin_departures_etl_to_gcs_bq: This pipeline pulls the departures data from the API and uploads the data as a CSV onto a GCS Bucket and Corresponding BigQuery table.
-3. berlin_union_departures_arrivals: This pipeline pulls the
+3. berlin_union_departures_arrivals: This pipeline pulls the data from the arrivals and departures table and unions them together into a combined table. 
 
 
 You can create with Mage the triggers to run the pipelines daily, and should run them in the order listed above with the union being last to combine the data. Make sure to have enough time for the first two pipelines to finish running before combining the two tables on BigQuery. 
